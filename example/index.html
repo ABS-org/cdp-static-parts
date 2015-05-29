@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Usage example</title>
+  <link rel="stylesheet" type="text/css" href="https://perfis.atencaobasica.org.br/public/plugin/we-plugin-core/assets/css/app.css">
+  <link rel="stylesheet" href="/bower_components/tupi/css/build.css">
+  <link rel="stylesheet" type="text/css" href="https://perfis.atencaobasica.org.br/theme/dist/css/themecss.css?v=?ar=824">
+
+  <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+
+<nav id="header-main" class="navbar navbar-default" role="navigation">
+  <div class="container">
+    <div id="cdp-logo-area" class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+      <ul id="cdp-main-menu" class="nav navbar-nav">
+        <li id="cdp-services-area" class="main_menu-item dropdown style_service"></li>
+
+        <li class="main_menu-search">
+          <form class="form-inline" role="form">
+            <div class="input-group">
+              <input type="search" class="search-input form-control" placeholder="Faça sua busca">
+              <span class="input-group-btn">
+                <button class="search-btn btn btn-default" type="button">
+                  <i class="icon-search cdp cdp-search"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </li>
+
+        <li class="main_menu-notification">
+          <a id="ember1122" class="ember-view " href="/n">
+            <span id="ember1158" class="ember-view cdp cdp-bell cdp-2x cdp-align-justify"><i class="glyphicon glyphicon-bell"></i>
+            <span id="ember1166" class="ember-view badge">0</span></span>
+          </a>
+        </li>
+        <li class="main_menu-dropdown logged-on dropdown">
+          <button class="btn btn-default dropdown-toggle user-menu-link" data-toggle="dropdown">
+            <span class="avatar-small" data-bindattr-1170="1170"><img id="ember1177" class="ember-view" heigth="35" width="35" userid="51144" src="/avatar/51144?style=thumbnail"></span>
+            <span class="user-name ">Alberto Souza</span><b class="caret"></b>
+          </button>
+          <ul id="dropdown-login-menu" class="dropdown-menu dropdown-menu-right dropdown-menu-user arrow_box" role="menu"></ul>
+        </li>
+      </ul>
+      <div class="bar-colored"></div>
+    </div>
+  </div>
+</nav>
+
+
+
+
+
+
+
+
+
+
+
+
+  <script type="text/javascript" src="/dist/script.js"></script>
+  <script type="text/javascript">
+    window.cdp.renderAll();
+  </script>
+</body>
+</html>

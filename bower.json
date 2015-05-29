@@ -1,0 +1,19 @@
+{
+  "name": "cdp-static-parts",
+  "version": "0.0.0",
+  "private": true,
+  "authors": [
+    "albertosouza <alberto.souza.99@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "tupi": "~0.1.100"
+  }
+}
