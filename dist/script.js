@@ -1,14 +1,16 @@
 if (!window.cdp) window.cdp = {};
 
-window.cdp.hosts = {
-  main: 'https://atencaobasica.org.br',
-  ajuda: 'https://ajuda.atencaobasica.org.br',
-  blog: 'https://blog.atencaobasica.org.br',
-  cursos: 'https://cursos.atencaobasica.org.br',
-  relatos: 'https://novo.atencaobasica.org.br',
-  perfis: 'https://perfis.atencaobasica.org.br',
-  static: 'https://static.atencaobasica.org.br'
-};
+if (!window.cdp.hosts) {
+  window.cdp.hosts = {
+    main: 'https://atencaobasica.org.br',
+    ajuda: 'https://ajuda.atencaobasica.org.br',
+    blog: 'https://blog.atencaobasica.org.br',
+    cursos: 'https://cursos.atencaobasica.org.br',
+    relatos: 'https://novo.atencaobasica.org.br',
+    perfis: 'https://perfis.atencaobasica.org.br',
+    static: 'https://static.atencaobasica.org.br'
+  };
+}
 
 window.cdp.cdpLogoText="<div class=\"navbar-brand header-main-brand\">"+
   "  <a href=\""+window.cdp.hosts.cursos+"\" class=\"app-main-logo\">"+
@@ -81,19 +83,14 @@ window.cdp.cdpUserMenuLiText = "<li>"+
   "    <\/li>"+
   "    <li class=\"divider\"><\/li>"+
   "    <li>"+
+  "      <a href=\""+window.cdp.hosts.relatos+"/meu/perfil\"> <i class=\"cdp cdp-user\"><\/i> Ver perfil<\/a>"+
+  "    <\/li>"+
+  "    <li>"+
   "      <a href=\""+window.cdp.hosts.perfis+"/account\"> <i class=\"cdp cdp-user\"><\/i> Editar perfil<\/a>"+
   "    <\/li>"+
   "    <li class=\"divider\"><\/li>"+
   "    <li>"+
-  "      <a href=\""+window.cdp.hosts.cursos+"/user_messages\"><i class=\"cdp cdp-message\"><\/i> Mensagens<\/a>"+
-  "    <\/li>"+
-  "    <li class=\"divider\"><\/li>"+
-  "    <li>"+
   "      <a href=\""+window.cdp.hosts.cursos+"/user_mail_notify\"><i class=\"cdp cdp-bell\"><\/i> Notificações por Email<\/a>"+
-  "    <\/li>"+
-  "    <li class=\"divider\"><\/li>"+
-  "    <li>"+
-  "      <a href=\""+window.cdp.hosts.cursos+"/user_friends\"><i class=\"cdp cdp-people\"><\/i> Solicitações de Amizade<\/a>"+
   "    <\/li>"+
   "    <li class=\"divider\"><\/li>"+
   "    <li>"+
