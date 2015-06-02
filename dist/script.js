@@ -126,7 +126,7 @@ window.cdp.cdpFooterText="" +
   "        <div class=\"small-footer\">"+
   "          <p>Espaço virtual de construção de conhecimento e aprendizado a partir das experiências de cada profissional da Atenção Básica.<\/p>"+
   "        <\/div>"+
-  "        <a class=\"btn btn-xs btn-default\" href=\""+window.cdp.hosts.cursos+"\/node\/399\">Saiba mais<\/a>"+
+  "        <a class=\"btn btn-xs btn-default\" href=\""+window.cdp.hosts.cursos+"\/sobre\">Saiba mais<\/a>"+
   "      <\/div>"+
   "      <div id=\"footer-main--facebook\" class=\"col-xs-12 col-sm-5 col-sm-offset-1 col-md-4  col-md-offset-0\">"+
   "        <div class=\"fb-like-box-lg\">"+
