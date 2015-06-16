@@ -192,7 +192,7 @@ window.cdp.cdpFooterText="" +
   "    <\/div>"+
   "  <\/div>"+
   "  <div class=\"copyright\">"+
-  "    <p class=\"text-center text-muted\">A Comunidade de Práticas está licenciada com uma Licença<br> <a href=\"http:\/\/creativecommons.org\/licenses\/by-nc-sa\/2.0\/br\/deed.pt\">Creative Commons - Atribuição-NãoComercial-CompartilhaIgual 2.0 Brasil (CC BY-NC-SA 2.0 BR)<\/a><\/p>"+
+  "    <p class=\"text-center text-muted\">A Comunidade de Práticas está licenciada com uma Licença Creative Commons - Atribuição-NãoComercial-Compartilha Igual 4.0 Internacional. <br>Para ver uma cópia desta licença, visite <a href=\"http://creativecommons.org/licenses/by-nc-sa/4.0/\">http://creativecommons.org/licenses/by-nc-sa/4.0/</a>.<\/p>"+
   "  <\/div>"+
   "<\/footer>";
 window.cdp.renderFooterText = function renderFooterText(seletor) {
