@@ -142,7 +142,7 @@ cdp.cdpFooterText="" +
   "      <\/div>"+
   "      <div id=\"footer-main--facebook\" class=\"col-xs-12 col-sm-5 col-sm-offset-1 col-md-4  col-md-offset-0\">"+
   "        <div class=\"fb-like-box-lg\">"+
-  "          <div><iframe src=\"\/\/www.facebook.com\/plugins\/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomunidadedepraticas&amp;width=300px&amp;height=208&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=0\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:300px; height:243px;\" allowtransparency=\"true\"><\/iframe><\/div>"+
+  "          <div><iframe src=\"\/\/www.facebook.com\/plugins\/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fcomunidadedepraticas&amp;&amp;height=208&amp;colorscheme=light&amp;show_faces=true&amp;header=true&amp;stream=false&amp;show_border=0\" scrolling=\"no\" frameborder=\"0\" style=\"border:none; overflow:hidden; width:100%; height:243px;\" allowtransparency=\"true\"><\/iframe><\/div>"+
   "        <\/div>"+
   "      <\/div>"+
   "      <div id=\"footer-main--links\" class=\"col-xs-12 col-sm-12 col-md-4\">"+
