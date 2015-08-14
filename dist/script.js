@@ -7,6 +7,7 @@
 (function () {
 
 var cdp = window.cdp || {};
+cdp.url = 'http://novo.atencaobasica.org.br/render-menu';
 
 cdp.readCookie = function readCookie(name) {
   var nameEQ = name + "=";
@@ -39,7 +40,7 @@ cdp.renderUserMenuLinks = function renderUserMenuLinks() {
   var token = cdp.readCookie('wetoken') || '';
 
   ajax({
-    url: 'http://cdp.dev:1430/render-menu',
+    url: cdp.url,
     method: 'GET',
     xhrFields: {
       withCredentials: true
