@@ -1,17 +1,28 @@
-#Como instalar
+# cdp-static-parts
+Conjunto de scripts de páginas e componenetes estáticos.
 
-
-Adicionar o script abaixo no html do site:
-
+# Requisitos
+Para poder fazer funcionar, é necessário ter dois id referenciando o local onde irá ser indicado.
 ```html
-<script src="https://static.atencaobasica.org.br/cdp-static-parts/dist/script.js"></script>
+<header id="main-navbar-content"></header>
+	<h3>Lorem Ipsum</h3>
+<div id="main-footer-content"></div>
 ```
+Neste exemplo, o header será renderizado no `#main-navbar-content` e o rodapé no `main-footer-content`.
 
-Abaixo do script usar uma das funções que carregam o html estatico:
+# Instalação
 
+1. Importar o script
+```html
+<script type="text/javascript" src="/dist/script.js"></script>
+``` 
+2. Inicializar o script 
 ```html
 <script type="text/javascript">
-  // carrega o html do footer dos sistemas da cdp
-  window.cdp.renderFooterText();
+  window.cdp.renderAll();
 </script>
 ```
+3. Testar (:
+
+# Desenvolvimento
+Para rodar o projeto, basta instalar as dependencias utilizando `npm install` e rodar o projeto usando `grunt`
