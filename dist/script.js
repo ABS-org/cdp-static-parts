@@ -31,12 +31,12 @@ var ajax = function (opts, success, fail) {
         opts.fail();
       }
     }
-  }
+  };
   xhr.open(opts.method, opts.url, true);
   xhr.send();
-}
+};
 
-cdp.renderUserMenuLinks = function renderUserMenuLinks() {
+cdp.renderUserMenuLinks = function renderUserMenuLinks(cb) {
   var token = cdp.readCookie('wetoken') || '';
 
   ajax({
@@ -51,15 +51,17 @@ cdp.renderUserMenuLinks = function renderUserMenuLinks() {
       
       navbarContent.insertAdjacentHTML('beforeend', data.header);
       footerContent.insertAdjacentHTML('beforeend', data.footer);
+      if(typeof cb === "function") cb(null);
     },
-    fail: function () {
+    fail: function (error) {
       console.error('Failed to load navbar and menu.');
+      if(typeof cb === "function") cb(error);
     }
   });
 };
 
-cdp.renderAll = function () {
-  cdp.renderUserMenuLinks();
+cdp.renderAll = function (cb) {
+  cdp.renderUserMenuLinks(cb);
 };
 
 window.cdp = cdp;
