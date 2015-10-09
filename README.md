@@ -2,13 +2,12 @@
 Conjunto de scripts de páginas e componenetes estáticos.
 
 ### Requisitos
-Para poder fazer funcionar, é necessário ter dois id referenciando o local onde irá ser indicado.
+Para poder importar o cabeçalho e o rodapé, é necessário identificar as tags com os id's referenciados abaixo.
 ```html
 <header id="main-navbar-content"></header>
 	<h3>Lorem Ipsum</h3>
 <footer id="main-footer-content"></footer>
 ```
-Neste exemplo, o header será renderizado no `#main-navbar-content` e o rodapé no `main-footer-content`.
 
 ### Instalação
 
