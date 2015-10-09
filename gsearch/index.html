@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <title>Busca da Comunidade de Práticas</title>
     <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
     <link rel="stylesheet" href="/bower_components/tupi2/dist/theme.min.css">
     <link rel="stylesheet" href="/dist/css/style.css">
+    <style type="text/css">
+      /* fix do box de busca  */
+      .gsc-input-box,
+      .gsc-input {
+        height: 30px !important;
+        display: table !important;
+        width: 100% !important;
+      }
+
+     input.gsc-input {
+        background: transparent !important;
+      }
+
+     /* fix to tupi */
+      .gsc-control-cse * {
+        box-sizing: content-box !important;
+      }
+
+      .gsc-table-result {
+        margin-left: 8px;
+      }
+    </style>
     <script type="text/javascript" src="/bower_components/jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="/bower_components/bootstrap/dist/js/bootstrap.js"></script>
 </head>
+
 <body>
     <header id="main-navbar-content"></header>
-<!-- <div class="container main-content">
-    <h3>Busca da Comunidade de Práticas</h3>
-    <br>
-    <noscript>Para usar essa busca você deve estar com o javascript do seu navegador ativado ou usar um navegador atualizado, recomendamos o Google Chrome e o Firefox.</noscript>
-    <div id="google-search-area"></div>
-    <script>
-    (function() {
-        var cx = '009040599217703286782:hlzmjdjbdsy';
-        var gcse = document.createElement('script');
-        gcse.type = 'text/javascript';
-        gcse.async = true;
-        gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
-            '//cse.google.com/cse.js?cx=' + cx;
-        $('#google-search-area').html(gcse);
-    })();
-    </script>
-    <gcse:search></gcse:search>
-</div>
- -->
+    <div class="container main-content">
+        <h3>Busca da Comunidade de Práticas</h3>
+        <br>
+        <noscript>Para usar essa busca você deve estar com o javascript do seu navegador ativado ou usar um navegador atualizado, recomendamos o Google Chrome e o Firefox.</noscript>
+        <script>
+        (function() {
+            var cx = '009040599217703286782:hlzmjdjbdsy';
+            var gcse = document.createElement('script');
+            gcse.type = 'text/javascript';
+            gcse.async = true;
+            gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+                '//cse.google.com/cse.js?cx=' + cx;
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(gcse, s);
+        })();
+        </script>
+        <gcse:search></gcse:search>
+    </div>
     <footer id="main-footer-content"></footer>
     <script type="text/javascript" src="/dist/js/script.js"></script>
     <script type="text/javascript">
@@ -37,4 +60,5 @@
     window.cdp.renderAll();
     </script>
 </body>
+
 </html>
