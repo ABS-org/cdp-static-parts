@@ -2,7 +2,7 @@
 Conjunto de scripts de páginas e componenetes estáticos.
 
 ### Requisitos
-Para poder importar o cabeçalho e o rodapé, é necessário identificar as tags com os id's referenciados abaixo.
+Para poder importar o cabeçalho e o rodapé, é necessário identificar duas tags com os id's referenciados abaixo.
 ```html
 <header id="main-navbar-content"></header>
 	<h3>Lorem Ipsum</h3>
