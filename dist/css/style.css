@@ -243,29 +243,29 @@
             box-shadow: 0 7px 0 #55a4f3;
             transition: all .25s ease-in-out; } }
     #main-header .primary-nav li.item-cursos {
-      border-color: #2d84b8; }
+      border-color: #469B84; }
       #main-header .primary-nav li.item-cursos i.icon-menu {
         background-position: -99px -31px; }
       #main-header .primary-nav li.item-cursos:hover i.icon-menu {
         background-position: -99px -62px; }
       #main-header .primary-nav li.item-cursos:hover a {
-        color: #2d84b8; }
+        color: #469B84; }
         @media (min-width: 768px) {
           #main-header .primary-nav li.item-cursos:hover a {
-            box-shadow: 0 7px 0 #2d84b8;
+            box-shadow: 0 7px 0 #469B84;
             transition: all .25s ease-in-out; } }
     #main-header .primary-nav li.item-cdpplus {
       position: relative;
-      border-color: #00a182; }
+      border-color: #FDC12A; }
       #main-header .primary-nav li.item-cdpplus i.icon-menu {
         background-position: -133px -31px; }
       #main-header .primary-nav li.item-cdpplus:hover i.icon-menu {
         background-position: -133px -62px; }
       #main-header .primary-nav li.item-cdpplus:hover > a {
-        color: #00a182; }
+        color: #FDC12A; }
       @media (min-width: 768px) {
         #main-header .primary-nav li.item-cdpplus:hover > a {
-          box-shadow: 0 7px 0 #00a182;
+          box-shadow: 0 7px 0 #FDC12A;
           transition: all .25s ease-in-out; } }
       #main-header .primary-nav li.item-cdpplus .dropdown-menu li {
         margin: 0; }
