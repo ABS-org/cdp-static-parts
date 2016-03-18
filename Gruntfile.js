@@ -103,6 +103,7 @@ module.exports = function (grunt) {
 
   // Server task
   grunt.registerTask('build', [
+    'copy',
     'uglify',
     'cssmin'
   ]);

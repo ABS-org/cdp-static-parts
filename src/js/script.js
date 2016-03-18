@@ -80,7 +80,11 @@ cdp.renderAll = function (cb) {
 };
 
 cdp.receiveMessage = function (event){
-  window.location.reload(true);
+  if (event.source === window.App.configs.get('server.providers.accounts') && event.data === 'reload') {
+    window.location.reload(true);
+  } else {
+    console.log(event);
+  }
 };
 
 window.addEventListener('message', cdp.receiveMessage, false);
