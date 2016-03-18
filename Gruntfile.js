@@ -22,7 +22,14 @@ module.exports = function (grunt) {
         options: {
           livereload: true,
         },
-      }
+      },
+      js: {
+        files: '<%= path.src %>/js/*.js',
+        tasks: ['copy:js'],
+        options: {
+          livereload: true,
+        },
+      }      
     },
     /************************************
      * grunt-contrib-connect

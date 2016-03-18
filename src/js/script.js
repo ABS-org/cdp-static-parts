@@ -4,10 +4,17 @@
  * Integração de visual, barra e footer dos projetos da CdP
  */
 
-(function () {
+(function (window, $_) {
 
 var cdp = window.cdp || {};
-cdp.url = 'http://novo.atencaobasica.org.br';
+cdp.url = 'https://perfis.atencaobasica.org.br';
+
+cdp.popup = function (href){
+  $_('#modal-susconecta').modal('hide');
+  var width = 600;
+  var left = ( window.innerWidth / 2 ) - ( width / 2 );
+  window.open(href, 'susconecta','left=' +left+ ',top=100,width=600,height=600,toolbar=0,location=0');
+};
 
 cdp.readCookie = function readCookie(name) {
   var nameEQ = name + "=";
@@ -48,9 +55,17 @@ cdp.renderUserMenuLinks = function renderUserMenuLinks(cb) {
     success: function(data) {
       var navbarContent = document.getElementById('main-navbar-content');
       var footerContent = document.getElementById('main-footer-content');
-      
+
       navbarContent.insertAdjacentHTML('beforeend', data.header);
       footerContent.insertAdjacentHTML('beforeend', data.footer);
+      document.body.insertAdjacentHTML('beforeend', data.susconecta);
+
+      if ($_) {
+        $('li a.susconecta_login').click(function (){
+          $('#modal-susconecta').modal('show');
+        });
+      }
+
       if(typeof cb === "function") cb(null);
     },
     fail: function (error) {
@@ -64,5 +79,11 @@ cdp.renderAll = function (cb) {
   cdp.renderUserMenuLinks(cb);
 };
 
+cdp.receiveMessage = function (event){
+  window.location.reload(true);
+};
+
+window.addEventListener('message', cdp.receiveMessage, false);
+
 window.cdp = cdp;
-})();
+})(window, $);
