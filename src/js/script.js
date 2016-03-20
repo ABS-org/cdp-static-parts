@@ -54,7 +54,7 @@ cdp.renderUserMenuLinks = function renderUserMenuLinks(cb) {
       document.body.insertAdjacentHTML('beforeend', data.susconecta);
 
       if ($_) {
-        $('li a.susconecta_login').click(function (){
+        $('.navbar-not-logged .susconecta_login').click(function (){
           $('#modal-susconecta').modal('show');
         });
       }

@@ -937,7 +937,7 @@
   line-height: 15px;
 }
 
-.main-footer .copyright .text-mutted {
+.main-footer .copyright .text-muted {
   margin: 10px 0 0;
 }
 
@@ -1077,9 +1077,12 @@
 }
 
 #modal-susconecta .modal-dialog #main-content .text-muted {
-  text-align: justify;
-  margin-top: 30px;
+  text-align: justify;  
   font-size: 14px;
+}
+
+#modal-susconecta .modal-dialog #main-content .text-muted:first-of-type {
+  margin-top: 30px;
 }
 
 #modal-susconecta .modal .login-action-links .col-xs-6 {
@@ -1170,7 +1173,7 @@
 #main-content form.form-login {}
 
 #main-content .thin {
-  max-width: 300px;
+  max-width: 500px;
   margin: auto;
 }
 
