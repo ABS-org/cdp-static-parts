@@ -8,6 +8,7 @@
 
 var cdp = window.cdp || {};
 cdp.url = 'https://perfis.atencaobasica.org.br';
+cdp.service = 'network';
 
 cdp.readCookie = function readCookie(name) {
   var nameEQ = name + "=";
@@ -56,6 +57,16 @@ cdp.renderUserMenuLinks = function renderUserMenuLinks(cb) {
       if ($_) {
         $('.navbar-not-logged .susconecta_login').click(function (){
           $('#modal-susconecta').modal('show');
+        });
+
+        $('#modal-susconecta .login-action-links').click(function (e){
+          e.preventDefault();
+          if (window.location.pathname === '/') {
+            window.location = e.target.href + '?service=' + cdp.service;
+            return;
+          }
+
+          window.location = e.target.href + '?service=' + cdp.service + '&returnUrl=' + window.location.pathname;
         });
       }
 
