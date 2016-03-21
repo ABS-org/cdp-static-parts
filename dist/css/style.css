@@ -1381,4 +1381,25 @@
 }
 
 
+.sus-parceiros {
+  background: #00a185;
+  margin: 0;
+  
+}
+.sus-parceiros h1.main-title {
+  text-align: center;
+  color:#fff;
+}
+.sus-parceiros h1.main-title .title_text .subtext {
+  color: #fff;
+}
+.sus-parceiros .container {
+  background: transparent;
+  padding: 20px 0;
+}
+.sus-parceiros .container .row > div {
+  text-align: center;
+  margin: 20px 0;
+}
+
 /* ------------ End ----------- */
