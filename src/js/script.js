@@ -6,6 +6,22 @@
 
 (function (window, $_) {
 
+$('.mega-dropdown').click(function(e) {
+    e.stopPropagation();
+});
+
+targetCollapses = $('.col-details .collapse');
+CollapsesCtrl = $('[data-toggle="menu-collapse"]');
+CollapsesCtrl.click(function(event) {
+  el  = $(this);
+  CollapsesCtrl.removeClass('active');
+  el.addClass('active');
+  targetCollapses.css('display', 'none');
+  $(el.attr('href')).slideDown('fast', function() {
+
+  });
+});
+
 var cdp = window.cdp || {};
 cdp.url = 'https://perfis.atencaobasica.org.br';
 cdp.service = 'network';
