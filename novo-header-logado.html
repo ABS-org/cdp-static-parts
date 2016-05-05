@@ -3,7 +3,9 @@
 <html>
 <head>
   <title>Usage example</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="msapplication-tap-highlight" content="no">
   <link rel="stylesheet" href="/bower_components/bootstrap/dist/css/bootstrap.css">
   <link rel="stylesheet" href="/bower_components/tupi2/dist/theme.min.css">
   <link rel="stylesheet" href="/dist/css/style.css">
@@ -26,7 +28,7 @@
           </a>
         </div>
 
-        <ul class="nav navbar-nav">
+        <ul class="nav navbar-nav navbar-left">
           <li class="dropdown dd-megamenu">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
               <span>
@@ -47,68 +49,95 @@
                     <li><a data-toggle="menu-collapse" href="#comunidadedetails">Comunidades</a></li>
                     <li><a data-toggle="menu-collapse" href="#relatosdetails">Relatos</a></li>
                     <li><a data-toggle="menu-collapse" href="#cursosdetails">Cursos</a></li>
+                    <li><a data-toggle="menu-collapse" href="#evidenciasdetails">Evidências em saúde</a></li>
                     <li><a data-toggle="menu-collapse" href="#eventosdetails">Eventos</a></li>
                     <li><a data-toggle="menu-collapse" href="#blogdetails">Blog</a></li>
-                    <li><a href="#">Mais</a></li>
+                    <li><a data-toggle="menu-collapse" href="#maisdetails">Mais</a></li>
                   </ul>
                 </div>
                 <div class="col-sm-9 col-xs-12 col-md-5 col-details">
                   <div class="collapse" id="comunidadedetails">
-                    <h3 class="col-details-title">Conteúdo Chamamento</h3>
-                    <div class="mm-banner banner-comunidades">
-                      <div>
+
+                    <div class="mm-banner">
+
                         <img src="/dist/img/mm_banner_comunidades.png" alt="Comunidades" />
-                      </div>
-                      <a href="#" class="btn btn-default">Participar</a>
+
                     </div>
                     <p class="desc">
-                      Praesent egestas tristique nibh. Vestibulum volutpat pretium libero. <a href="#" class="more">Mais »</a>
+                      Um lugar para pensar e se mobilizar em torno de ideias, temas e práticas da saúde.
                     </p>
-                    <ul class="nav nav-pills mm-sub-nav nav-stacked">
-                      <li><a href="#">Todas</a></li>
-                      <li><a href="#">Minhas</a></li>
-                      <li><a href="#">Criar</a></li>
-                    </ul>
+                    <div><a href="#" class="btn btn-default">Participar</a></div>
                   </div>
                   <div class="collapse" id="relatosdetails">
-                    <h3 class="col-details-title">Conteúdo Chamamento</h3>
-                    <div class="mm-banner banner-relatos">
-                      <div>
+
+                    <div class="mm-banner">
+
                         <img src="/dist/img/mm_banner_relatos.png" alt="Relatos" />
-                      </div>
-                      <a href="#" class="btn btn-default">Participar</a>
+
                     </div>
                     <p class="desc">
-                      Praesent egestas tristique nibh. Vestibulum volutpat pretium libero. <a href="#" class="more">Mais »</a>
+                      Da gestão à atenção, experiências no SUS podem ser relatadas em textos, vídeos e imagens, conhecimento que conecta profissionais em suas realidades.
                     </p>
-                    <ul class="nav nav-pills mm-sub-nav nav-stacked">
-                      <li><a href="#">Todas</a></li>
-                      <li><a href="#">Minhas</a></li>
-                      <li><a href="#">Criar</a></li>
-                    </ul>
+                    <div><a href="#" class="btn btn-default">Participar</a></div>
                   </div>
                   <div class="collapse" id="cursosdetails">
-                    <h3 class="col-details-title">Conteúdo Chamamento</h3>
-                    <div class="mm-banner banner-avasus">
-                      <div>
-                        <img src="/dist/img/mm_banner_avasus.png" alt="Relatos" />
-                      </div>
-                      <a href="#" class="btn btn-default">Participar</a>
+
+                    <div class="mm-banner">
+
+                        <img src="/dist/img/mm_banner_avasus.png" alt="Cursos" />
+
                     </div>
                     <p class="desc">
-                      Praesent egestas tristique nibh. Vestibulum volutpat pretium libero. <a href="#" class="more">Mais »</a>
+                      Cursos abertos e livres já feitos por milhares de profissionais.
                     </p>
-                    <ul class="nav nav-pills mm-sub-nav nav-stacked">
-                      <li><a href="#">Todas</a></li>
-                      <li><a href="#">Minhas</a></li>
-                      <li><a href="#">Criar</a></li>
-                    </ul>
+                    <div><a href="#" class="btn btn-default">Participar</a></div>
                   </div>
                   <div class="collapse" id="eventosdetails">
-                    <h3 class="col-details-title">Conteúdo Chamamento</h3>
+                    <div class="mm-banner">
+
+                        <img src="/dist/img/mm_banner_eventos.png" alt="Eventos" />
+
+                    </div>
+                    <p class="desc">
+                      Tudo o que acontece sobre as temáticas do SUS está aqui. Fique por dentro e entre em contato para a gente divulgar o seu evento também.
+                    </p>
+                    <div><a href="#" class="btn btn-default">Participar</a></div>
+                  </div>
+                  <div class="collapse" id="evidenciasdetails">
+                    <div class="mm-banner">
+
+                        <img src="/dist/img/mm_banner_evidencias.png" alt="Evidências" />
+
+                    </div>
+                    <p class="desc">
+                      A tomada de decisão da clínica à gestão tem o apoio do Portal Saúde Baseada em Evidências.
+                    </p>
+                    <div><a href="#" class="btn btn-default">Participar</a></div>
                   </div>
                   <div class="collapse" id="blogdetails">
-                    <h3 class="col-details-title">Conteúdo Chamamento</h3>
+                    <div class="mm-banner">
+
+                        <img src="/dist/img/mm_banner_blog.png" alt="Blogs" />
+
+                    </div>
+                    <p class="desc">
+                      Notícias, entrevistas, reportagens e muito mais em um espaço informativo com linguagem e conteúdos que o trabalhador precisa.
+                    </p>
+                    <div><a href="#" class="btn btn-default">Participar</a></div>
+                  </div>
+                  <div class="collapse" id="maisdetails">
+                    <div class="mm-banner">
+
+                        <img src="/dist/img/mm_banner_mais.png" alt="Mais" />
+
+                    </div>
+                    <p class="desc">
+                      Informações úteis para trabalhos e estudos em saúde.
+                    </p>
+                    <div><a href="#" class="btn btn-default">Participar</a></div>
+                    <div><a href="#" class="btn btn-default">Concursos</a></div>
+                    <div><a href="#" class="btn btn-default">Editais</a></div>
+                    <div><a href="#" class="btn btn-default">Midiateca</a></div>
                   </div>
                 </div>
                 <div class="destaque col-sm-8 col-xs-8 col-md-5 hidden-xs">
@@ -123,7 +152,18 @@
             </div>
           </li>
         </ul>
-        <ul class="nav navbar-nav navbar-right">
+        <form class="navbar-form" role="search">
+          <div class="input-group">
+            <div class="form-group">
+              <input type="text" class="form-control" placeholder="Faça sua Busca">
+            </div>
+            <span class="input-group-btn">
+              <button type="submit" class="btn btn-primary"><img src="/dist/img/lupa.png"></button>
+            </span>
+          </div>
+        </form>
+
+        <ul class="nav navbar-nav right-navbar">
           <li class="dropdown dd-notificacoes">
             <a href="#" class="dropdown-toggle btn btn-default" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img src="/dist/img/bell.png" alt="" /></a>
             <div class="dropdown-menu">
@@ -208,16 +248,7 @@
             </ul>
           </li>
         </ul>
-        <form class="navbar-form" role="search">
-          <div class="input-group">
-            <div class="form-group">
-              <input type="text" class="form-control" placeholder="Faça sua Busca">
-            </div>
-            <span class="input-group-btn">
-              <button type="submit" class="btn btn-primary"><img src="/dist/img/lupa.png"></button>
-            </span>
-          </div>
-        </form>
+
       </div><!-- /.container-fluid -->
     </nav>
 
