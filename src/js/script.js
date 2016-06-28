@@ -71,11 +71,11 @@ cdp.renderUserMenuLinks = function renderUserMenuLinks(cb) {
       document.body.insertAdjacentHTML('beforeend', data.susconecta);
 
       if ($_) {
-        $('.navbar-not-logged .susconecta_login').click(function (){
-          $('#modal-susconecta').modal('show');
+        $_('.navbar-not-logged .susconecta_login').click(function (){
+          $_('#modal-susconecta').modal('show');
         });
 
-        $('#modal-susconecta .login-action-links').click(function (e){
+        $_('#modal-susconecta .login-action-links').click(function (e){
           e.preventDefault();
           if (window.location.pathname === '/') {
             window.location = e.target.href + '?service=' + cdp.service;
@@ -100,4 +100,8 @@ cdp.renderAll = function (cb) {
 };
 
 window.cdp = cdp;
+<<<<<<< HEAD
 })(window, $);
+=======
+})(window, jQuery || $);
+>>>>>>> d8d6fa65b1ed9ad1d60fac25481f016abb39aaa2
